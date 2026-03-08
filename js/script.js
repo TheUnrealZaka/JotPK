@@ -210,7 +210,7 @@ async function fetchGameFileSize() {
             fileSizeElement.textContent = '(Loading...)';
         }
         
-        const response = await fetch('https://api.github.com/repos/Amphoreous/JotPK/releases/latest');
+        const response = await fetch('https://api.github.com/repos/TheUnrealZaka/JotPK/releases/latest');
         const data = await response.json();
         
         const gameAsset = data.assets.find(asset => 
